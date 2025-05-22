@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 const inter = Inter({
   variable: "--font-inter-sans",
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["italic", "normal"],
 });
 
 export const metadata: Metadata = {
@@ -53,14 +55,15 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased bg-[#21333a] text-white`}
       >
-        <main
-          id="main"
-          className="container mx-auto min-h-dvh flex flex-col justify-center items-center px-2"
-        >
-          <Header />
-          {children}
-          <Footer />
-        </main>
+        <div className="container mx-auto min-h-dvh grid grid-rows-[auto_auto_auto] p-4">
+          <div className="flex items-end justify-center">
+            <Header />
+          </div>
+          <div className="flex items-center justify-center">{children}</div>
+          <div className="flex items-top justify-center">
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   );
