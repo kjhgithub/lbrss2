@@ -2,7 +2,7 @@ import Link from "next/link";
 function page() {
   return (
     <>
-      <div className="mt-6 mb-12 p-12 flex flex-col justify-center items-start">
+      <div className="my-6 flex flex-col justify-center items-start">
         <h1 className="text-3xl font-semibold mb-2">Impressum</h1>
         <span className="font-semibold">Anbieter</span>
         <span className="">Luke Barnes</span>
@@ -16,12 +16,9 @@ function page() {
         <span className="">Registergericht: Amtsgericht Köln</span>
         <span className="">Registernummer: tba</span>
         <span className="font-semibold mt-6">Datenschutz</span>
-        <span className="">
-          Datenschutzhinweise:&nbsp;
-          <Link href="/datenschutz" className="hover:underline">
-            https://www.lbrss.com/datenschutz
-          </Link>
-        </span>
+        <Link href="/datenschutz" className="hover:underline">
+          https://www.lbrss.com/datenschutz
+        </Link>
       </div>
     </>
   );
