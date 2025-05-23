@@ -7,7 +7,7 @@ function SubHeader() {
         <span>TE &#127934;</span>
       </div>
       <span className="italic text-center">
-        Richtig besaitet. Ansonsten ist wieder der Schläger schuld.
+        Richtig besaitet. <br /> Ansonsten ist wieder der Schläger schuld.
         {/* String it right. Otherwise, it's the racket's fault. Again. */}
       </span>
     </section>

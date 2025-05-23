@@ -59,7 +59,7 @@ export default function RootLayout({
       >
         <Scroll />
         <div className="container mx-auto p-4 min-h-dvh grid grid-cols-1 justify-items-center place-items-center">
-          <div className="flex flex-col items-center justify-center gap-20">
+          <div className="flex flex-col items-center justify-center gap-10">
             <Header />
             {children}
             <Footer />

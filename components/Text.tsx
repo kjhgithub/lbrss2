@@ -10,7 +10,7 @@ function Text() {
       {/*       <span className="text-center">
         Experienced racket stringer and lifelong racket sports fanatic
       </span> */}
-      <span className="text-center mt-2">&#128205; Köln, Deutschland</span>
+      <span className="text-center mt-4">&#128205; Köln, Deutschland</span>
     </div>
   );
 }
