@@ -56,6 +56,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased bg-[#21333a] text-white`}
       >
+        <Scroll />
         <div className="container mx-auto min-h-dvh grid grid-rows-[auto_auto_auto] p-4">
           <div className="flex items-end justify-center">
             <Header />
@@ -65,7 +66,6 @@ export default function RootLayout({
             <Footer />
           </div>
         </div>
-        <Scroll />
       </body>
     </html>
   );
