@@ -8,28 +8,28 @@ function Links() {
     {
       name: "google",
       href: "https://maps.app.goo.gl/bN5D6QcaWDGi8Lbz8?g_st=ic",
-      slogan: "Google\nReviews",
+      slogan: { de: "Google\nRezensionen", en: "Google\nReviews" },
       img: null,
       icon: <MapPinHouse strokeWidth={1} className="size-12 md:size-18" />,
     },
     {
       name: "instagram",
       href: "https://www.instagram.com/lbracketstringingservices",
-      slogan: "Instagram\nProfil",
+      slogan: { de: "Instagram\nProfil", en: "Instagram\nProfile" },
       img: Insta,
       icon: null,
     },
     {
       name: "whatsapp",
       href: "https://wa.me/4915253407173",
-      slogan: "Whatsapp\nBusiness",
+      slogan: { de: "Whatsapp\nBusiness", en: "Whatsapp\nBusiness" },
       img: WhatsApp,
       icon: null,
     },
     {
       name: "email",
       href: "mailto:lbracketstringingservices@gmail.com",
-      slogan: "Email\nAdresse",
+      slogan: { de: "Email\nAdresse", en: "Email\nAdress" },
       img: null,
       icon: <Mails strokeWidth={1} className="size-12 md:size-18 " />,
     },
@@ -53,7 +53,7 @@ function Links() {
             />
           )}
           <span className="text-center text-xs md:text-sm whitespace-pre-line">
-            {link.slogan}
+            {link.slogan.de}
           </span>
         </Link>
       ))}

@@ -1,11 +1,15 @@
 import Text from "@/components/Text";
 import Links from "@/components/Links";
+import SubHeader from "@/components/SubHeader";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-12 items-center justify-center my-4">
-      <Text />
-      <Links />
-    </main>
+    <>
+      <main className="flex flex-col items-center justify-center gap-12">
+        <SubHeader />
+        <Text />
+        <Links />
+      </main>
+    </>
   );
 }

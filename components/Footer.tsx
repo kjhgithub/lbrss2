@@ -23,7 +23,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="my-6 flex gap-6">
+    <footer className="flex items-center justify-center gap-6">
       {links.map((link, index) => {
         return (
           <React.Fragment key={link.name}>

@@ -2,7 +2,7 @@ import Link from "next/link";
 function page() {
   return (
     <>
-      <div className="my-6 flex flex-col justify-center items-start">
+      <div className="my-6 flex flex-col justify-center items-center">
         <h1 className="text-3xl font-semibold mb-2">Impressum</h1>
         <span className="font-semibold">Anbieter</span>
         <span className="">Luke Barnes</span>

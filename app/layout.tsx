@@ -5,6 +5,7 @@ import "@/assets/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Scroll from "@/components/Scroll";
+import Languages from "@/components/Languages";
 
 const inter = Inter({
   variable: "--font-inter-sans",
@@ -57,7 +58,15 @@ export default function RootLayout({
         className={`${inter.className} antialiased bg-[#21333a] text-white`}
       >
         <Scroll />
-        <div className="container mx-auto min-h-dvh grid grid-rows-[auto_auto_auto] p-4">
+        <div className="container mx-auto p-4 min-h-dvh grid grid-cols-1 justify-items-center place-items-center">
+          <div className="flex flex-col items-center justify-center gap-20">
+            <Header />
+            {children}
+            <Footer />
+          </div>
+        </div>
+
+        {/*         <div className="container mx-auto min-h-dvh grid grid-rows-[auto_auto_auto] p-4">
           <div className="flex items-end justify-center">
             <Header />
           </div>
@@ -65,7 +74,7 @@ export default function RootLayout({
           <div className="flex items-top justify-center">
             <Footer />
           </div>
-        </div>
+        </div> */}
       </body>
     </html>
   );
