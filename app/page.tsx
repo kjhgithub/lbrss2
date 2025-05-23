@@ -1,6 +1,5 @@
 import Text from "@/components/Text";
 import Links from "@/components/Links";
-import SubHeader from "@/components/SubHeader";
 
 export default function Home() {
   return (

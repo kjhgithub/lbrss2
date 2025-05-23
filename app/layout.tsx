@@ -5,7 +5,7 @@ import "@/assets/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Scroll from "@/components/Scroll";
-import Languages from "@/components/Languages";
+import Languages from "@/components/LanguageSwitcher";
 
 const inter = Inter({
   variable: "--font-inter-sans",
@@ -59,7 +59,7 @@ export default function RootLayout({
       >
         <Scroll />
         <div className="container mx-auto p-4 min-h-dvh grid grid-cols-1 justify-items-center place-items-center">
-          <div className="flex flex-col items-center justify-center gap-10">
+          <div className="flex flex-col items-center justify-center">
             <Header />
             {children}
             <Footer />

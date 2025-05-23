@@ -11,7 +11,12 @@ function page() {
         <span className="font-semibold mt-6">Kontakt</span>
         <span className="">Telefon: +49 (0) 1525 3407173</span>
         <span className="">Email: lbracketstringingservices@gmail.com</span>
-        <span className="">Website: https://www.lbrrs.com</span>
+        <span className="">
+          Website:{" "}
+          <Link href="/" className="hover:underline">
+            https://www.lbrrs.com
+          </Link>
+        </span>
         <span className="font-semibold mt-6">Registerangaben</span>
         <span className="">Registergericht: Amtsgericht Köln</span>
         <span className="">Registernummer: TBA</span>

@@ -9,10 +9,6 @@ function Footer() {
 
   const links = [
     {
-      name: "Home",
-      href: "/",
-    },
-    {
       name: "Impressum",
       href: "/impressum",
     },
@@ -20,14 +16,18 @@ function Footer() {
       name: "Datenschutz",
       href: "/datenschutz",
     },
+    {
+      name: "Home",
+      href: "/",
+    },
   ];
 
   return (
-    <footer className="flex items-center justify-center gap-6">
+    <footer className="flex flex-col items-center justify-center gap-2 mt-10">
       {links.map((link, index) => {
         return (
           <React.Fragment key={link.name}>
-            {index > 0 && <span>|</span>}
+            {/* {index > 0 && <span>|</span>} */}
             <Link
               href={link.href}
               className={clsx("hover:underline", {

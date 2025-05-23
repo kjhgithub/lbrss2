@@ -3,7 +3,7 @@ import Link from "next/link";
 function Text() {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div className="flex items-center justify-center gap-4 mb-2">
+      <div className="flex items-center justify-center gap-4 mb-6">
         <span>BA &#127992;</span>
         <span>SQ &#9899;</span>
         <span>TE &#127934;</span>
@@ -30,7 +30,7 @@ function Text() {
       </span> */}
       <span className="text-center mt-6">
         <Link
-          href="https://g.co/kgs/o9Wczem"
+          href="https://maps.app.goo.gl/jvfB8CbAiWQmm1JG9?g_st=ic"
           target="_blank"
           className="hover:underline"
         >
