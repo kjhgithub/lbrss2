@@ -6,7 +6,6 @@ export default function Home() {
   return (
     <>
       <main className="flex flex-col items-center justify-center gap-12">
-        <SubHeader />
         <Text />
         <Links />
       </main>

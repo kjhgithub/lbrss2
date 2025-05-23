@@ -1,17 +1,43 @@
+import Link from "next/link";
+
 function Text() {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <span className="text-center">
-        Erfahrener Schlägerbesaiter und langjähriger Schlägersport-Fan.
+    <section className="flex flex-col items-center justify-center">
+      <div className="flex items-center justify-center gap-4 mb-2">
+        <span>BA &#127992;</span>
+        <span>SQ &#9899;</span>
+        <span>TE &#127934;</span>
+      </div>
+      <span className="italic text-center mb-4">
+        Richtig besaitet. <br /> Ansonsten ist wieder der Schläger schuld.
+        {/* String it right. Otherwise, it's the racket's fault. Again. */}
       </span>
-      <span className="text-center">
+      <span className="text-center text-sm md:text-base">
+        Erfahrener Besaiter, langjähriger Racketsportler.
+      </span>
+      <span className="text-center text-sm md:text-base">
+        Geboren in England, in Deutschland angekommen.
+      </span>
+      {/* 
+      <span className="text-center text-xs">
+        Erfahrener Schlägerbesaiter, langjähriger Schlägersport-Fan.
+      </span>
+      <span className="text-center text-xs">
         Ursprünglich aus England, nun in Deutschland angekommen.
-      </span>
+      </span> */}
       {/*       <span className="text-center">
         Experienced racket stringer and lifelong racket sports fanatic
       </span> */}
-      <span className="text-center mt-4">&#128205; Köln, Deutschland</span>
-    </div>
+      <span className="text-center mt-6">
+        <Link
+          href="https://g.co/kgs/o9Wczem"
+          target="_blank"
+          className="hover:underline"
+        >
+          &#128205; Köln, Deutschland
+        </Link>
+      </span>
+    </section>
   );
 }
 

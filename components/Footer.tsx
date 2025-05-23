@@ -9,12 +9,12 @@ function Footer() {
 
   const links = [
     {
-      name: "Impressum",
-      href: "/impressum",
-    },
-    {
       name: "Home",
       href: "/",
+    },
+    {
+      name: "Impressum",
+      href: "/impressum",
     },
     {
       name: "Datenschutz",

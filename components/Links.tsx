@@ -7,7 +7,7 @@ function Links() {
   const links = [
     {
       name: "google",
-      href: "https://maps.app.goo.gl/bN5D6QcaWDGi8Lbz8?g_st=ic",
+      href: "https://www.google.com/search?client=safari&sca_esv=e833def03aa227c2&hl=en-de&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-EwtDwtVJFNf2JjcNlVQhtcxB8jQEZBttdb2eUUE7DotbMc6XSjlE7cbVWADj8XfXADS0pz1q2_RuuLJ5bcnJOxQzDOCGx3eD8Fk9ZzMC95H7EXTti39MSt6uWu2-VJ7sOMFb2Yy4Gigv7D_4RZpqrJiqtB92FgzyjZr4aVLDITEdZz9cY4UatycWfWkojzx-cYSexwTUosKFdqWxmJW23XWRYzGW&q=LB+Racket+Stringing+Services+-+Schl%C3%A4ger+bespannen/Besaitungsservice+f%C3%BCr+Tennis-,+Badminton-+und+Squashspieler+Reviews&sa=X&ved=2ahUKEwjBm6yPw7qNAxWSiv0HHRCdCWkQ0bkNegQIKxAE&biw=371&bih=701&dpr=3",
       slogan: { de: "Google\nRezensionen", en: "Google\nReviews" },
       img: null,
       icon: <MapPinHouse strokeWidth={1} className="size-12 md:size-18" />,
