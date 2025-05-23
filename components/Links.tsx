@@ -1,57 +1,62 @@
 import Link from "next/link";
 import WhatsApp from "@/assets/images/WhatsApp.png";
-import insta from "@/assets/images/insta.png";
+import Insta from "@/assets/images/insta.png";
 import { Mails, MapPinHouse } from "lucide-react";
 
 function Links() {
+  const links = [
+    {
+      name: "google",
+      href: "https://maps.app.goo.gl/bN5D6QcaWDGi8Lbz8?g_st=ic",
+      slogan: "Google\nReviews",
+      img: null,
+      icon: <MapPinHouse strokeWidth={1} className="size-12 md:size-18" />,
+    },
+    {
+      name: "instagram",
+      href: "https://www.instagram.com/lbracketstringingservices",
+      slogan: "Instagram\nProfil",
+      img: Insta,
+      icon: null,
+    },
+    {
+      name: "whatsapp",
+      href: "https://wa.me/4915253407173",
+      slogan: "Whatsapp\nBusiness",
+      img: WhatsApp,
+      icon: null,
+    },
+    {
+      name: "email",
+      href: "mailto:lbracketstringingservices@gmail.com",
+      slogan: "Email\nAdresse",
+      img: null,
+      icon: <Mails strokeWidth={1} className="size-12 md:size-18 " />,
+    },
+  ];
+
   return (
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-18 overflow-hidden ">
-      <Link
-        href="https://maps.app.goo.gl/bN5D6QcaWDGi8Lbz8?g_st=ic"
-        target="_blank"
-        className="flex flex-col items-center justify-center gap-2"
-      >
-        <MapPinHouse strokeWidth={1} className="h-20 w-20" />
-        <span className="text-center text-sm">
-          Google
-          <br />
-          Reviews
-        </span>
-      </Link>
-      <Link
-        href="https://www.instagram.com/lbracketstringingservices"
-        target="_blank"
-        className="flex flex-col items-center justify-center gap-2"
-      >
-        <img src={insta.src} alt="" className="h-20" />
-        <span className="text-center text-sm">
-          Instagram
-          <br />
-          Profile
-        </span>
-      </Link>
-      <Link
-        href="https://wa.me/4915253407173"
-        className="flex flex-col items-center justify-center gap-2"
-      >
-        <img src={WhatsApp.src} alt="" className="h-20" />
-        <span className="text-center text-sm">
-          WhatsApp
-          <br />
-          Business
-        </span>
-      </Link>
-      <Link
-        href="mailto:lbracketstringingservices@gmail.com"
-        className="flex flex-col items-center justify-center gap-2"
-      >
-        <Mails strokeWidth={1} className="h-20 w-20 " />
-        <span className="text-center text-sm">
-          Email
-          <br />
-          Adress
-        </span>
-      </Link>
+    <div className="grid grid-cols-4 md:grid-cols-4 gap-12 md:gap-18">
+      {links.map((link, index) => (
+        <Link
+          key={index}
+          href={link.href}
+          target="_blank"
+          className="flex flex-col items-center justify-center gap-2"
+        >
+          {link.icon && link.icon}
+          {link.img && (
+            <img
+              src={link.img.src}
+              alt={link.name}
+              className="size-12 md:size-18"
+            />
+          )}
+          <span className="text-center text-xs md:text-sm whitespace-pre-line">
+            {link.slogan}
+          </span>
+        </Link>
+      ))}
     </div>
   );
 }
