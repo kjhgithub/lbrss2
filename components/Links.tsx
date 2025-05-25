@@ -1,9 +1,14 @@
+"use client";
 import Link from "next/link";
 import WhatsApp from "@/assets/images/WhatsApp.png";
 import Insta from "@/assets/images/insta.png";
 import { Mails, MapPinHouse } from "lucide-react";
+import { useSearchParams } from "next/navigation";
 
 function Links() {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang");
+
   const links = [
     {
       name: "google",
@@ -42,7 +47,7 @@ function Links() {
           key={index}
           href={link.href}
           target="_blank"
-          className="flex flex-col items-center justify-center gap-2"
+          className="flex flex-col items-center justify-center gap-2 min-w-22"
         >
           {link.icon && link.icon}
           {link.img && (
@@ -53,7 +58,7 @@ function Links() {
             />
           )}
           <span className="text-center text-xs md:text-sm whitespace-pre-line">
-            {link.slogan.de}
+            {lang === "en" ? link.slogan.en : link.slogan.de}
           </span>
         </Link>
       ))}

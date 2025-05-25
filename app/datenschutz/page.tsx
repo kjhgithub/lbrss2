@@ -1,8 +1,17 @@
+"use client";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 function page() {
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang");
   return (
     <div className="flex flex-col mt-8 gap-2">
+      {lang === "en" ? (
+        <span className="font-semibold my-2">
+          Translation under contruction
+        </span>
+      ) : null}
       <h1 className="text-3xl font-semibold">Datenschutzerklärung</h1>
       <p>
         Im Folgenden möchten wir Sie aufklären, wie Ihre Daten von uns

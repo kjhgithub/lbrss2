@@ -1,23 +1,27 @@
 "use client";
 import React from "react";
-import Link from "next/link";
+//import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
+import LangLink from "@/lib/LangLink";
+import { useSearchParams } from "next/navigation";
 
 function Footer() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const lang = searchParams.get("lang");
 
   const links = [
     {
-      name: "Impressum",
+      name: { de: "Impressum", en: "Imprint" },
       href: "/impressum",
     },
     {
-      name: "Datenschutz",
+      name: { de: "Datenschutz", en: "Privacy Policy" },
       href: "/datenschutz",
     },
     {
-      name: "Home",
+      name: { de: "Home", en: "Home" },
       href: "/",
     },
   ];
@@ -26,16 +30,16 @@ function Footer() {
     <footer className="flex flex-col items-center justify-center gap-2 mt-10">
       {links.map((link, index) => {
         return (
-          <React.Fragment key={link.name}>
+          <React.Fragment key={index}>
             {/* {index > 0 && <span>|</span>} */}
-            <Link
+            <LangLink
               href={link.href}
               className={clsx("hover:underline", {
                 "font-semibold": pathname === link.href,
               })}
             >
-              {link.name}
-            </Link>
+              {lang === "en" ? link.name.en : link.name.de}
+            </LangLink>
           </React.Fragment>
         );
       })}
