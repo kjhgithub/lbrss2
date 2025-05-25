@@ -27,7 +27,7 @@ function Links() {
     {
       name: "whatsapp",
       href: "https://wa.me/4915253407173",
-      slogan: { de: "WhatsApp\nBusiness", en: "Whatsapp\nBusiness" },
+      slogan: { de: "WhatsApp\nBusiness", en: "WhatsApp\nBusiness" },
       img: WhatsApp,
       icon: null,
     },
