@@ -47,7 +47,7 @@ function Links() {
           key={index}
           href={link.href}
           target="_blank"
-          className="flex flex-col items-center justify-center gap-2 min-w-22"
+          className="flex flex-col items-center justify-center gap-2"
         >
           {link.icon && link.icon}
           {link.img && (
