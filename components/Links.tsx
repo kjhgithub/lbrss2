@@ -41,7 +41,7 @@ function Links() {
   ];
 
   return (
-    <div className="grid grid-cols-4 md:grid-cols-4 gap-12 md:gap-18">
+    <div className="grid grid-cols-4 md:grid-cols-4 gap-12 md:gap-18 justify-items-center place-content-center">
       {links.map((link, index) => (
         <Link
           key={index}
