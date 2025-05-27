@@ -49,36 +49,34 @@ function page() {
         Aufbewahrungspflichten bestehen.
       </p>
       <h2 className="text-xl font-semibold mt-2">Betroffenenrechte</h2>
-      <p>
-        Sie haben als betroffene Person, das Recht auf Auskunft, das Recht auf
-        Berichtigung oder Löschung, das Recht auf Einschränkung der Verarbeitung
-        und das Recht auf Widerspruch gegen die Verarbeitung Ihrer Daten. Sofern
-        Sie uns eine Einwilligung erteilt haben, können Sie diese jederzeit mit
-        Wirkung für die Zukunft widerrufen. Bitte richten Sie Ihren Widerspruch
-        formlos an die oben genannte Adresse. Darüber hinaus haben Sie das Recht
-        auf Datenübertragbarkeit. Sie haben weiter das Recht, sich bei einer
-        Aufsichtsbehörde über die Verarbeitung zu beschweren. Eine Liste der
-        entsprechenden Behörden finden Sie unter:{" "}
+      <p className="flex flex-col">
+        Sie haben als betroffene Person,
+        <span className="mt-2">das Recht auf Auskunft,</span>
+        <span>das Recht auf Berichtigung oder Löschung,</span>
+        <span>das Recht auf Einschränkung der Verarbeitung und</span>
+        <span className="mb-2">
+          das Recht auf Widerspruch gegen die Verarbeitung Ihrer Daten.{" "}
+        </span>
+        Sofern Sie uns eine Einwilligung erteilt haben, können Sie diese
+        jederzeit mit Wirkung für die Zukunft widerrufen. Bitte richten Sie
+        Ihren Widerspruch formlos an die oben genannte Adresse. Darüber hinaus
+        haben Sie das Recht auf Datenübertragbarkeit. Sie haben weiter das
+        Recht, sich bei einer Aufsichtsbehörde über die Verarbeitung zu
+        beschweren. Eine Liste der entsprechenden Behörden finden Sie unter:{" "}
         <Link
           href="
         https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
-          className="underline break-all"
+          className="underline break-all mb-2"
           target="_blank"
         >
           https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
         </Link>
-        .
-      </p>
-      <h2 className="text-xl font-semibold mt-2">
-        Rechtliche Hinweise Betroffenenrechte
-      </h2>
-      <p>
         Sollte die Datenverarbeitung nicht auf Einwilligung des Betroffenen
         beruhen, muss das Widerrufsrecht nicht angegeben werden (Art. 13 Abs. 2
         lit. c DSGVO).
       </p>
       <h2 className="text-xl font-semibold mt-2">
-        Rechtliche Hinweise Auftragsverarbeitungsvertrag
+        Auftragsverarbeitungsvertrag
       </h2>
       <p>
         Grundsätzlich ist ein Auftragsverarbeitungsvertrag mit dem Hoster
@@ -95,6 +93,12 @@ function page() {
         Website-Hosters nach dem TKG zuzurechnen und dient in erster Linie
         Sicherheitszwecken des Hosters.“ Wir gehen davon aus, dass diese
         Ausnahme auf GitHub Pages anzuwenden ist.
+      </p>
+      <h2 className="text-xl font-semibold mt-2">Cookies oder Tracking</h2>
+      <p className="flex flex-col">
+        Diese Website verwendet keine Cookies, keinen Local Storage und keine
+        Analyse- oder Tracking-Tools. Es erfolgt über die Website daher
+        Profilbildung oder ähnliches.
       </p>
       <h2 className="text-xl font-semibold mt-2">Hosting GitHub Pages</h2>
       <p className="flex flex-col">
