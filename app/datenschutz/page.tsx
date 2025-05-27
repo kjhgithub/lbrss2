@@ -148,16 +148,19 @@ function page() {
       </p>
       <h2 className="text-xl font-semibold mt-2">Cloudflare</h2>
       <p className="flex flex-col">
-        Unsere Website nutzt Dienste der Cloudflare Inc., 101 Townsend St., San
-        Francisco, CA 94107, USA. Cloudflare stellt ein Content Delivery Network
-        (CDN) bereit und fungiert als Reverse Proxy zur Absicherung und
-        Optimierung unserer Website. Dabei werden alle Daten, die zwischen Ihrem
-        Browser und unserer Website übertragen werden, über das Cloudflare-Netz
-        geleitet. Dabei kann es auch zur Verarbeitung personenbezogener Daten
-        wie der IP-Adresse kommen. Der Einsatz erfolgt auf Grundlage unseres
-        berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO an einer
-        sicheren und effizienten Bereitstellung unseres Onlineangebots. Weitere
-        Informationen finden Sie in der Datenschutzerklärung von Cloudflare:
+        Unsere Website nutzt Dienste der
+        <span className="mt-2">Cloudflare Inc.</span>
+        <span>101 Townsend St.</span>
+        <span className="mb-2">San Francisco, CA 94107, USA</span>
+        Cloudflare stellt ein Content Delivery Network (CDN) bereit und fungiert
+        als Reverse Proxy zur Absicherung und Optimierung unserer Website. Dabei
+        werden alle Daten, die zwischen Ihrem Browser und unserer Website
+        übertragen werden, über das Cloudflare-Netz geleitet. Dabei kann es auch
+        zur Verarbeitung personenbezogener Daten wie der IP-Adresse kommen. Der
+        Einsatz erfolgt auf Grundlage unseres berechtigten Interesses gemäß Art.
+        6 Abs. 1 lit. f DSGVO an einer sicheren und effizienten Bereitstellung
+        unseres Onlineangebots. Weitere Informationen finden Sie in der
+        Datenschutzerklärung von Cloudflare:
         <Link
           href="https://www.cloudflare.com/privacypolicy/"
           className="underline break-all mb-2"
@@ -171,7 +174,7 @@ function page() {
         Auf dieser Website befinden sich Links zu externen Diensten:
         <span className="mt-2">Google Maps</span>
         <span>Instagram-Profil</span>
-        <span>WhatsApp Business</span>
+        <span className="mb-2">WhatsApp Business</span>
         Bitte beachten Sie: Beim Aufruf dieser Links verlassen Sie unsere
         Website. Dabei können durch die jeweiligen Drittanbieter
         personenbezogene Daten (z.B. IP-Adresse) erfasst und verarbeitet werden.
