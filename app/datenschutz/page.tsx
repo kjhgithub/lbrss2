@@ -97,7 +97,7 @@ function page() {
       <h2 className="text-xl font-semibold mt-2">Cookies oder Tracking</h2>
       <p className="flex flex-col">
         Diese Website verwendet keine Cookies, keinen Local Storage und keine
-        Analyse- oder Tracking-Tools. Es erfolgt über die Website daher
+        Analyse- oder Tracking-Tools. Es erfolgt über die Website daher keine
         Profilbildung oder ähnliches.
       </p>
       <h2 className="text-xl font-semibold mt-2">Hosting GitHub Pages</h2>
