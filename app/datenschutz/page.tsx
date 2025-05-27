@@ -96,7 +96,7 @@ function page() {
         Sicherheitszwecken des Hosters.“ Wir gehen davon aus, dass diese
         Ausnahme auf GitHub Pages anzuwenden ist.
       </p>
-      <h2 className="text-xl font-semibold mt-2">Hosting</h2>
+      <h2 className="text-xl font-semibold mt-2">Hosting GitHub Pages</h2>
       <p className="flex flex-col">
         Unser Hoster erhebt in sog. Logfiles folgende Daten, die Ihr Browser
         übermittelt: IP-Adresse, die Adresse der vorher besuchten Website
@@ -146,48 +146,24 @@ function page() {
           https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-data-protection-addendum#attachment-1--the-standard-contractual-clauses-processors
         </Link>
       </p>
-      <h2 className="text-xl font-semibold mt-2">Content Delivery Network</h2>
+      <h2 className="text-xl font-semibold mt-2">Cloudflare</h2>
       <p className="flex flex-col">
-        Wir nutzen das Content Delivery Network (CDN) von Cloudflare Germany
-        GmbH, Rosental 7, c/o Mindspace, 80331 München Deutschland (Cloudflare),
-        um die Sicherheit und die Auslieferungsgeschwindigkeit unserer Website
-        zu erhöhen. Dies entspricht unserem berechtigten Interesse (Art. 6 Abs.
-        1 lit. f DSGVO). Ein CDN ist ein Netzwerk aus [weltweit] verteilten
-        Servern, das in der Lage ist, optimiert Inhalte an den Websitenutzer
-        auszuliefern. Für diesen Zweck können personenbezogene Daten in
-        Server-Logfiles von Cloudflare verarbeitet werden. Bitte vergleichen Sie
-        die Ausführungen unter „Hosting“. Cloudflare ist Empfänger Ihrer
-        personenbezogenen Daten und als Auftragsverarbeiter für uns tätig. Die
-        entspricht unserem berechtigten Interesse im Sinne des Art. 6 Abs. 1 S.
-        1 lit. f DSGVO, selbst kein Content Delivery Network zu betreiben. Sie
-        haben das Recht der Verarbeitung zu widersprechen. Ob der Widerspruch
-        erfolgreich ist, ist im Rahmen einer Interessenabwägung zu ermitteln.
-        Die Verarbeitung der unter diesem Abschnitt angegebenen Daten ist weder
-        gesetzlich noch vertraglich vorgeschrieben. Die Funktionsfähigkeit der
-        Website ist ohne die Verarbeitung nicht gewährleistet. Ihre
-        personenbezogenen Daten werden von Cloudflare so lange gespeichert, wie
-        es für die beschriebenen Zwecke erforderlich ist. Weitere Informationen
-        zu Widerspruchs- und Beseitigungsmöglichkeiten gegenüber Cloudflare
-        finden Sie unter:
+        Unsere Website nutzt Dienste der Cloudflare Inc., 101 Townsend St., San
+        Francisco, CA 94107, USA. Cloudflare stellt ein Content Delivery Network
+        (CDN) bereit und fungiert als Reverse Proxy zur Absicherung und
+        Optimierung unserer Website. Dabei werden alle Daten, die zwischen Ihrem
+        Browser und unserer Website übertragen werden, über das Cloudflare-Netz
+        geleitet. Dabei kann es auch zur Verarbeitung personenbezogener Daten
+        wie der IP-Adresse kommen. Der Einsatz erfolgt auf Grundlage unseres
+        berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO an einer
+        sicheren und effizienten Bereitstellung unseres Onlineangebots. Weitere
+        Informationen finden Sie in der Datenschutzerklärung von Cloudflare:
         <Link
-          href="https://www.cloudflare.com/de-de/cloudflare-customer-dpa/"
+          href="https://www.cloudflare.com/privacypolicy/"
           className="underline break-all mb-2"
           target="_blank"
         >
-          https://www.cloudflare.com/de-de/cloudflare-customer-dpa/
-        </Link>
-        Cloudflare DPA Cloudflare hat Compliance-Maßnahmen für internationale
-        Datenübermittlungen umgesetzt. Diese gelten für alle weltweiten
-        Aktivitäten, bei denen Cloudflare personenbezogene Daten von natürlichen
-        Personen in der EU verarbeitet. Diese Maßnahmen basieren auf den
-        EU-Standardvertragsklauseln (SCCs). Weitere Informationen finden Sie
-        unter:{" "}
-        <Link
-          href="https://www.cloudflare.com/cloudflare_customer_SCCs-German.pdf"
-          className="underline break-all"
-          target="_blank"
-        >
-          https://www.cloudflare.com/cloudflare_customer_SCCs-German.pdf
+          https://www.cloudflare.com/privacypolicy/
         </Link>
       </p>
       <h2 className="text-xl font-semibold mt-2">Externe Links</h2>
