@@ -34,7 +34,7 @@ function Links() {
     {
       name: "email",
       href: "mailto:lbracketstringingservices@gmail.com",
-      slogan: { de: "Email\nAdresse", en: "Email\nAdress" },
+      slogan: { de: "Email\nAdresse", en: "Email\nAddress" },
       img: null,
       icon: <Mails strokeWidth={1} className="size-12 md:size-18 " />,
     },

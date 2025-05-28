@@ -25,7 +25,7 @@ export function LanguageSwitcher() {
         onClick={() => setLang("de")}
         disabled={!lang || lang === "de"}
       >
-        DE 🇩🇪
+        DE
       </button>
       <div className="">|</div>
       <button
@@ -36,7 +36,7 @@ export function LanguageSwitcher() {
         onClick={() => setLang("en")}
         disabled={lang === "en"}
       >
-        🇬🇧 EN
+        EN
       </button>
     </div>
   );
