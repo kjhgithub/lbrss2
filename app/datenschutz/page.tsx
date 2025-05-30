@@ -42,7 +42,7 @@ function page() {
         <span>Ihr Name</span>
         <span>Ihre Email-Adresse</span>
         <span className="mb-2">
-          Ihre Telefonnummer, sofern Sie sie uns diese mitteilen
+          Ihre Telefonnummer, sofern Sie uns diese mitteilen
         </span>
         Wir werden die Daten löschen, sobald die Speicherung nicht mehr
         erforderlich ist oder die Verarbeitung einschränken, falls gesetzliche
