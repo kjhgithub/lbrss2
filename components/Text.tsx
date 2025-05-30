@@ -29,8 +29,7 @@ function Text() {
       </span>
       <span className="text-center text-sm md:text-base">
         {lang === "en"
-          ? "E
-Experienced stringer, lifelong racket sports fan"
+          ? "Experienced stringer, lifelong racket sports fan"
           : "Erfahrener Besaiter, langjähriger Racketsportler"}
       </span>
       <span className="text-center text-sm md:text-base">
