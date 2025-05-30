@@ -13,7 +13,7 @@ function page() {
           <span className="font-semibold">Site Operator</span>
           <span className="">Luke Barnes</span>
           <span className="">Steinbergerstraße 30</span>
-          <span className="">50733 Cologne, Deutschland</span>
+          <span className="">50733 Cologne, Germany</span>
           <span className="font-semibold mt-6">Contact</span>
           <span className="">Phone: +49 (0) 1525 3407173</span>
           <span className="">Email: lbracketstringingservices@gmail.com</span>
