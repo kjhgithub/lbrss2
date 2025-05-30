@@ -29,13 +29,13 @@ function Text() {
       </span>
       <span className="text-center text-sm md:text-base">
         {lang === "en"
-          ? "Experienced stringer, lifelong racket sports fan"
-          : "Erfahrener Besaiter, langjähriger Racketsportler"}
+          ? "Experienced stringer and lifelong racket sports fan"
+          : "Erfahrener Besaiter und langjähriger Racketsportler"}
       </span>
       <span className="text-center text-sm md:text-base">
         {lang === "en"
-          ? "Originally from 🇬🇧 - escaped to 🇩🇪🇪🇺"
-          : "Ursprünglich aus 🇬🇧 - geflohen nach 🇩🇪🇪🇺"}
+          ? "Originally from 🇬🇧 ➡️ escaped to 🇩🇪🇪🇺"
+          : "Ursprünglich aus 🇬🇧 ➡️ geflohen nach 🇩🇪🇪🇺"}
       </span>
 
       <span className="text-center mt-6">
