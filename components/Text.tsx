@@ -35,7 +35,7 @@ function Text() {
       <span className="text-center text-sm md:text-base">
         {lang === "en"
           ? "Originally from 🇬🇧 ➡️ escaped to 🇩🇪🇪🇺"
-          : "Ursprünglich aus 🇬🇧 ➡️ geflohen nach 🇩🇪🇪🇺"}
+          : "Ursprünglich aus 🇬🇧 ➡️ geflohen nach 🇩🇪 🇪🇺"}
       </span>
 
       <span className="text-center mt-6">
