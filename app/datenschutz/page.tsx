@@ -9,7 +9,7 @@ function page() {
     <div className="flex flex-col mt-8 gap-2">
       {lang === "en" ? (
         <span className="font-semibold my-2">
-          Translation under contruction
+          Translation under construction
         </span>
       ) : null}
       <h1 className="text-3xl font-semibold">Datenschutzerklärung</h1>
