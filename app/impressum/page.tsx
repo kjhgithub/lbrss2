@@ -9,25 +9,25 @@ function page() {
     <>
       {lang === "en" ? (
         <div className="my-6 flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-semibold mb-2">Imprint</h1>
-          <span className="font-semibold">Site Operator</span>
+          <h1 className="text-3xl font-semibold mb-2">Legal Disclosure</h1>
+          <span className="font-semibold">Website Owner</span>
           <span className="">Luke Barnes</span>
           <span className="">Steinbergerstraße 30</span>
           <span className="">50733 Cologne, Germany</span>
-          <span className="font-semibold mt-6">Contact</span>
+          <span className="font-semibold mt-6">Contact Information</span>
           <span className="">Phone: +49 (0) 1525 3407173</span>
           <span className="">Email: lbracketstringingservices@gmail.com</span>
           <span className="">
             Website:{" "}
             <Link href="/" className="hover:underline">
-              https://www.lbrrs.com
+              https://www.lbrss.com
             </Link>
           </span>
           <span className="font-semibold mt-6">
-            Company registration details
+            Company Registration Details
           </span>
-          <span className="">Court of Registration: Local Court Cologne</span>
-          <span className="">Registration number: TBA</span>
+          <span className="">Tax Office: Cologne North</span>
+          <span className="">Tax Number: 5217/5334/1466</span>
           <span className="font-semibold mt-6">Privacy Policy</span>
           <Link href="/datenschutz?lang=en" className="hover:underline">
             https://www.lbrss.com/datenschutz?lang=en
@@ -46,12 +46,12 @@ function page() {
           <span className="">
             Website:{" "}
             <Link href="/" className="hover:underline">
-              https://www.lbrrs.com
+              https://www.lbrss.com
             </Link>
           </span>
           <span className="font-semibold mt-6">Registerangaben</span>
-          <span className="">Registergericht: Amtsgericht K&ouml;ln</span>
-          <span className="">Registernummer: TBA</span>
+          <span className="">Finanzamt: Köln-Nord</span>
+          <span className="">Steuernummer: 5217/5334/1466</span>
           <span className="font-semibold mt-6">Datenschutz</span>
           <Link href="/datenschutz" className="hover:underline">
             https://www.lbrss.com/datenschutz

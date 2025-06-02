@@ -13,7 +13,7 @@ function Footer() {
 
   const links = [
     {
-      name: { de: "Impressum", en: "Imprint" },
+      name: { de: "Impressum", en: "Legal Disclosure" },
       href: "/impressum",
     },
     {
