@@ -9,7 +9,7 @@ function page() {
     <>
       {lang === "en" ? (
         <div className="my-6 flex flex-col justify-center items-center text-center">
-          <h1 className="text-3xl font-semibold mb-4">Legal Notice</h1>
+          <h1 className="text-3xl font-semibold mb-4">Legal Disclosure</h1>
           <span className="font-semibold">
             Information according to § 5 TMG
           </span>
@@ -58,7 +58,7 @@ function page() {
           <span className="">W-Idnr. DE454212205</span>
 
           <span className="mt-6">
-            Umsatzsteuer-ID:nicht erforderlich gemäß § 19 UStG
+            Umsatzsteuer-ID: nicht erforderlich gemäß § 19 UStG
             (Kleinunternehmerregelung)
           </span>
           <span className="mt-6">
