@@ -9,7 +9,7 @@ function page() {
     <>
       {lang === "en" ? (
         <div className="my-6 flex flex-col justify-center items-center text-center">
-          <h1 className="text-3xl font-semibold mb-2">Legal Notice</h1>
+          <h1 className="text-3xl font-semibold mb-4">Legal Notice</h1>
           <span className="font-semibold">
             Information according to § 5 TMG
           </span>
@@ -39,28 +39,31 @@ function page() {
           </span>
         </div>
       ) : (
-        <div className="my-6 flex flex-col justify-center items-center">
-          <h1 className="text-3xl font-semibold mb-2">Impressum</h1>
-          <span className="font-semibold">Anbieter</span>
+        <div className="my-6 flex flex-col justify-center items-center text-center">
+          <h1 className="text-3xl font-semibold mb-4">Impressum</h1>
+          <span className="font-semibold">Angaben gemäß § 5 TMG</span>
+          <span className="">LB Racket Stringing Services</span>
+          <span className="">Teutoburgerstrasse 38</span>
+          <span className="">50678 Köln, Deutschland</span>
+
+          <span className="font-semibold mt-6">Vertreten durch</span>
           <span className="">Luke Barnes</span>
-          <span className="">Steinbergerstraße 30</span>
-          <span className="">50733 K&ouml;ln, Deutschland</span>
+
           <span className="font-semibold mt-6">Kontakt</span>
           <span className="">Telefon: +49 (0) 1525 3407173</span>
           <span className="">Email: lbracketstringingservices@gmail.com</span>
-          <span className="">
-            Website:{" "}
-            <Link href="/" className="hover:underline">
-              https://www.lbrss.com
-            </Link>
-          </span>
+
           <span className="font-semibold mt-6">Registerangaben</span>
-          <span className="">Finanzamt: Köln-Nord</span>
-          <span className="">Steuernummer: 5217/5334/1466</span>
-          <span className="font-semibold mt-6">Datenschutz</span>
-          <Link href="/datenschutz" className="hover:underline">
-            https://www.lbrss.com/datenschutz
-          </Link>
+          <span className="">Finanzamt: Köln-Altstadt</span>
+          <span className="">W-Idnr. DE454212205</span>
+
+          <span className="mt-6">
+            Umsatzsteuer-ID:nicht erforderlich gemäß § 19 UStG
+            (Kleinunternehmerregelung)
+          </span>
+          <span className="mt-6">
+            Inhaltlich Verantwortlicher gemäß § 18 Abs. 2 MStV: Luke Barnes
+          </span>
         </div>
       )}
     </>
