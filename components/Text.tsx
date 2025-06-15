@@ -17,7 +17,7 @@ function Text() {
         {lang === "en" ? (
           <>
             String it right. <br />
-            Otherwise, it's the racket's fault. Again.
+            Otherwise it's the racket's fault. Again.
           </>
         ) : (
           <>
