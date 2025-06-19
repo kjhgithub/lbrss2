@@ -14,7 +14,7 @@ function page() {
             Information according to § 5 TMG
           </span>
           <span className="">LB Racket Stringing Services</span>
-          <span className="">Teutoburgerstrasse 38</span>
+          <span className="">Teutoburger Strasse 38</span>
           <span className="">50678 Cologne, Germany</span>
 
           <span className="font-semibold mt-6">Represented by</span>
