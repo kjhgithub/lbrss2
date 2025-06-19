@@ -218,7 +218,7 @@ function page() {
           </h2>
           <p className="flex flex-col mb-2">
             <span className="">Luke Barnes</span>
-            <span className="">Teutoburgerstraße 38</span>
+            <span className="">Teutoburger Straße 38</span>
             <span className="">50678 K&ouml;ln, Deutschland</span>
             <span className="">Email: lbracketstringingservices@gmail.com</span>
           </p>
