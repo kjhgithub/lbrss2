@@ -16,7 +16,7 @@ function Text() {
       <span className="italic text-center mb-4">
         {lang === "en" ? (
           <>
-            String it right. <br />
+            Strung right. <br />
             Otherwise it's the racket's fault. Again.
           </>
         ) : (
