@@ -43,7 +43,7 @@ function page() {
           <h1 className="text-3xl font-semibold mb-4">Impressum</h1>
           <span className="font-semibold">Angaben gemäß § 5 TMG</span>
           <span className="">LB Racket Stringing Services</span>
-          <span className="">Teutoburgerstraße 38</span>
+          <span className="">Teutoburger Straße 38</span>
           <span className="">50678 Köln, Deutschland</span>
 
           <span className="font-semibold mt-6">Vertreten durch</span>
