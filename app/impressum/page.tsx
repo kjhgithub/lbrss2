@@ -55,7 +55,7 @@ function page() {
 
           <span className="font-semibold mt-6">Registerangaben</span>
           <span className="">Finanzamt: Köln-Altstadt</span>
-          <span className="">W-Idnr. DE454212205</span>
+          <span className="">W-IdNr. DE454212205</span>
 
           <span className="mt-6">
             Umsatzsteuer-ID: nicht erforderlich gemäß § 19 UStG
