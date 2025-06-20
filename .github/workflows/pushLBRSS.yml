@@ -23,6 +23,7 @@ jobs:
           git config user.name "kjhgithub"
           git config user.email "kim-habermehl@mailbox.org"
           git commit --allow-empty -m "Actions workflow haki to lbrss at $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+          git push origin main
           cd ..
 
       - name: Synchronize files from haki to lbrss
