@@ -45,6 +45,7 @@ jobs:
           cd lbrss-dest
           git config user.name "kjhgithub"
           git config user.email "kim-habermehl@mailbox.org"
+          git switch -c main
           git commit --allow-empty -m "Initial commit (Automated)"
           git add .
           # Check if there are any changes before committing
