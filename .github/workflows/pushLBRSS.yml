@@ -17,7 +17,7 @@ jobs:
       - name: Clone LBRSS
         run: |
           git clone https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git lbrss-dest
-          cd repo2_destination
+          cd lbrss-dest
           git checkout main
           cd ..
 
