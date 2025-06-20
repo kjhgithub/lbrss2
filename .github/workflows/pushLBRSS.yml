@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repo1 (Source)
+      - name: Checkout haki (Source)
         uses: actions/checkout@v4
         with:
           repository: ${{ github.repository }} # Explicitly checkout the current repo
@@ -17,6 +17,7 @@ jobs:
       - name: Clone LBRSS
         run: |
           git clone https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git lbrss-dest
+          ls -la repo2_destination/
           cd lbrss-dest
           git checkout main
           cd ..
