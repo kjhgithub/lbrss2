@@ -45,6 +45,7 @@ jobs:
           cd lbrss-dest
           git config user.name "kjhgithub"
           git config user.email "kim-habermehl@mailbox.org"
+          git commit --allow-empty -m "Initial commit (Automated)"
           git add .
           # Check if there are any changes before committing
           git diff-index --quiet HEAD || git commit -m "Sync from haki-tech at $(date -u +"%Y-%m-%d %H:%M:%S UTC") (Automated)"
