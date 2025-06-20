@@ -39,4 +39,4 @@ jobs:
           git add .
           # Check if there are any changes before committing
           git diff-index --quiet HEAD || git commit -m "Sync from haki-tech at $(date -u +"%Y-%m-%d %H:%M:%S UTC") (Automated)"
-          git push https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git main
+          git push --force https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git main
