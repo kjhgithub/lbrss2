@@ -19,7 +19,7 @@ jobs:
           git clone https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git lbrss-dest
           ls -la lbrss-dest
           cd lbrss-dest
-          git checkout -b main
+          git checkout main || git checkout -b main
           git config user.name "kjhgithub"
           git config user.email "kim-habermehl@mailbox.org"
           git commit --allow-empty -m "Actions workflow haki to lbrss at $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
