@@ -1,0 +1,42 @@
+name: Sync to LBRSS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo1 (Source)
+        uses: actions/checkout@v4
+        with:
+          repository: ${{ github.repository }} # Explicitly checkout the current repo
+          path: haki-source # Checkout into a dedicated subfolder
+
+      - name: Clone LBRSS
+        run: git clone https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git lbrss-dest
+
+      - name: Synchronize files from haki to lbrss
+        run: |
+          # Use rsync to copy from haki-source to lbrss-dest
+          # -a: archive mode (preserves permissions, timestamps, etc.)
+          # -v: verbose output
+          # --delete: deletes files in destination that are not in source (important for sync!)
+          # --exclude: exclude specific files/directories
+          rsync -av --delete \
+            --exclude='next.config.ts' \
+            --exclude='README.md' \
+            --exclude='public/site.webmanifest' \
+            --exclude='public/CNAME' \
+            haki-source/ lbrss-dest/
+
+      - name: Commit and push changes to Repo2
+        run: |
+          cd lbrss-dest
+          git config user.name "github-actions[bot]" # Recommended for automated commits
+          git config user.email "github-actions[bot]@users.noreply.github.com" # Recommended for automated commits
+          git add .
+          # Check if there are any changes before committing
+          git diff-index --quiet HEAD || git commit -m "Sync from haki-tech at $(date -u +"%Y-%m-%d %H:%M:%S UTC") (Automated)"
+          git push https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git main
