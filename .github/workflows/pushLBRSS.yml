@@ -20,6 +20,8 @@ jobs:
           ls -la lbrss-dest
           cd lbrss-dest
           git checkout main
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git commit --allow-empty -m "Actions workflow haki to lbrss at $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
           cd ..
 
@@ -40,8 +42,8 @@ jobs:
       - name: Commit and push changes to Repo2
         run: |
           cd lbrss-dest
-          git config user.name "kjhgithub"
-          git config user.email "kim-habermehl@mailbox.org"
+          git config user.name "github-actions[bot]" # Recommended for automated commits
+          git config user.email "github-actions[bot]@users.noreply.github.com" # Recommended for automated commits
           git add .
           # Check if there are any changes before committing
           git diff-index --quiet HEAD || git commit -m "Sync from haki-tech at $(date -u +"%Y-%m-%d %H:%M:%S UTC") (Automated)"
