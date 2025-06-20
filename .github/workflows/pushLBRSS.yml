@@ -15,7 +15,11 @@ jobs:
           path: haki-source # Checkout into a dedicated subfolder
 
       - name: Clone LBRSS
-        run: git clone https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git lbrss-dest
+        run: |
+          git clone https://x-access-token:${{ secrets.REPO2_PAT }}@github.com/lbrss/lbracketstringingservices.git lbrss-dest
+          cd repo2_destination
+          git checkout main
+          cd ..
 
       - name: Synchronize files from haki to lbrss
         run: |
